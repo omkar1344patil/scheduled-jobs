@@ -3,7 +3,7 @@ name: run main.py
 on:
   workflow_dispatch:         # 👈 enables manual triggering via GitHub UI
   schedule:
-    - cron: '0 0 * * 1'      # At 00:00 on Monday (UTC)
+    - cron: '0/5 * * * *'      # At 00:00 on Monday (UTC)
 
 jobs:
   build:
